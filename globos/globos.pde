@@ -25,15 +25,18 @@ class Globo
 
 ArrayList<Globo> globos;
 
+PImage cara;
 
 void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  cara = loadImage("circulo.jpg");
 }
 
 void draw()
 {
+  image(cara,0,0);
   background(200 , 1 , 200);
   for(int i=0;i<globos.size();i++)
   {
