@@ -24,16 +24,19 @@ class Globo
 
 ArrayList<Globo> globos;
 
+PImage teleco;
 
 void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  teleco = loadImage("teleco.jpg");
 }
 
 void draw()
 {
   background(30 , 200 , 70);
+  image(teleco,0,0);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
