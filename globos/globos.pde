@@ -15,9 +15,14 @@ class Globo
     x+=vx;
   }
 
+  PImage cara;
   void dibujate()
   {
-      ellipse(x,y,200,200);
+      cara = loadImage("axel.png");
+      rectMode(CENTER);
+      rect(x,y,200,200);
+      image(cara,x,y,100,100);
+      
   }
   
 }
